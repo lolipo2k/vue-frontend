@@ -1,0 +1,38 @@
+main {
+    .replenish-upload {
+        h4 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .frame-upload {
+            width: 100%;
+            padding: 80px 0px;
+            border: 2px dashed rgba(233, 255, 252, 0.2);
+            border-radius: 15px;
+            text-align: center;
+
+            input {
+                display: none;
+            }
+
+            .btn-default {
+                margin: 0 auto;
+            }
+        }
+
+        .replenish-btns {
+            display: flex;
+            margin-top: 50px;
+            justify-content: center;
+
+            .btn-default {
+                margin-left: 0;
+            }
+
+            .btn-frame {
+                margin-left: 30px;
+            }
+        }
+    }
+}

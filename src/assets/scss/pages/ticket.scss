@@ -1,0 +1,47 @@
+@import "../details/players.scss";
+
+main {
+    .ticket-create {
+        form {
+            display: flex;
+            flex-direction: column;
+
+            input,
+            textarea {
+                min-width: 300px;
+                width: 30%;
+                margin: 0 auto 20px auto;
+            }
+
+            textarea {
+                height: 300px;
+            }
+
+            .btn-default {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .ticket-content {
+        h1 {
+            span {
+                color: #02FEE1;
+            }
+        }
+
+        .ticket-list {
+            &_header {
+                @include header;
+            }
+
+            &_content {
+                @include content;
+
+                .ticket-item {
+                    @include item;
+                }
+            }
+        }
+    }
+}

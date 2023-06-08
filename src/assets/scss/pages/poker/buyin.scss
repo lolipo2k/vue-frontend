@@ -1,0 +1,58 @@
+.buyin-info {
+    margin-top: 30px;
+
+    &_text {
+        font-weight: 600;
+
+        span {
+            color: #02FEE1;
+        }
+    }
+
+    &_btn {
+        .btn-default {
+            margin: 10px auto 0 auto;
+            cursor: pointer;
+        }
+    }
+}
+
+.buyin-range {
+    padding: 60px 40px;
+
+    &_content {
+        background: linear-gradient(180deg, #7A7FB1 0%, #5E65A6 100%);
+        border-radius: 20px;
+        padding: 15px 20px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+
+        &-value {
+            width: 120px;
+            margin-right: 15px;
+
+            input {
+                background: #FFFFFF;
+                border-radius: 11px;
+                font-size: 14px;
+                color: #040036;
+                padding: 8px 12px;
+                width: 100%;
+            }
+        }
+
+        &-slider {
+            width: calc(100% - 120px);
+
+            input {
+                width: 100%;
+            }
+        }
+    }
+
+    .btn-default {
+        margin: 20px auto 0 auto;
+    }
+}

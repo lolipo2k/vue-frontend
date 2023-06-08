@@ -1,0 +1,156 @@
+.info.poker {
+    position: fixed;
+    top: 60px;
+    left: 20px;
+    text-align: left;
+}
+
+.total-pot,
+.info-table {
+    font-weight: 600;
+    animation-fill-mode: forwards;
+
+    span {
+        color: #02FEE1;
+    }
+
+    &_score {
+        font-weight: 500;
+        font-size: 16px;
+        background: #023161;
+        border-radius: 20px;
+        padding: 5px 15px;
+        display: table;
+        margin: 0 auto;
+    }
+
+    &_chips {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+
+        &>div {
+            display: flex;
+            flex-direction: column-reverse;
+
+            img {
+                width: 30px;
+                margin-top: -15px;
+                position: relative;
+            }
+        }
+    }
+
+    &.win {
+        animation: chips-to-user 3s;
+        z-index: 999;
+        position: relative;
+    }
+
+    &.one {
+        --offset-top: -70px;
+        --offset-left: -100px;
+    }
+
+    &.two {
+        --offset-top: -70px;
+        --offset-left: 110px;
+    }
+
+    &.three {
+        --offset-top: -10px;
+        --offset-left: -180px;
+    }
+
+    &.four {
+        --offset-top: -10px;
+        --offset-left: 180px;
+    }
+
+    &.five {
+        --offset-top: 0px;
+        --offset-left: -180px;
+    }
+
+    &.six {
+        --offset-top: 20px;
+        --offset-left: 180px;
+    }
+
+    &.seven {
+        --offset-top: 60px;
+        --offset-left: -140px;
+    }
+
+    &.eight {
+        --offset-top: 60px;
+        --offset-left: 140px;
+    }
+
+    &.nine {
+        --offset-top: -100px;
+        --offset-left: 0px;
+    }
+
+    &.my {
+        --offset-top: 100px;
+        --offset-left: 0px;
+    }
+}
+
+.time-start {
+    font-size: 30px;
+    color: #02FEE1;
+    font-weight: 600;
+}
+
+.carts {
+    padding-right: 15%;
+
+    ul {
+        display: flex;
+        justify-content: center;
+
+        li {
+            margin-left: 40px;
+
+            @media (max-width: 1600px) {
+                margin-left: 20px;
+            }
+
+            img {
+                width: 100px;
+                max-width: 100px;
+
+                &.act {
+                    border: 3px solid #f2b311;
+                    border-radius: 7px;
+                }
+
+                @media (max-width: 1600px) {
+                    width: 70px;
+                }
+            }
+
+            &:first-child {
+                margin-left: 0px;
+            }
+        }
+    }
+}
+
+.btn-default.step-ready {
+    margin: 10px auto 0 auto;
+    position: relative;
+    z-index: 99999;
+}
+
+@keyframes chips-to-user {
+    from {
+        transform: translateY(0) translateX(0);
+    }
+
+    to {
+        transform: translateY(var(--offset-top)) translateX(var(--offset-left));
+    }
+}

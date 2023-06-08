@@ -1,0 +1,15 @@
+main {
+    &.profile-page {
+        margin-top: 50px;
+    }
+
+    .profile-header {
+        @import './profile/profile-image.scss';
+        @import './profile/profile-info.scss';
+    }
+
+    @import './profile/profile-statistic.scss';
+    @import './profile/profile-history.scss';
+}
+
+@import './profile/profile-modal.scss';

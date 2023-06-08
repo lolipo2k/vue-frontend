@@ -1,0 +1,60 @@
+footer {
+    background: #0B0C2F;
+    padding: 40px 0px;
+    margin-top: 100px;
+
+    main.poker~& {
+        display: none;
+    }
+
+    main.verify~& {
+        display: none;
+    }
+
+    .footer-mail {
+        margin-top: 20px;
+        font-size: 20px;
+
+        @media (max-width: 992px) {
+            margin-top: 40px;
+        }
+    }
+
+    .footer-copyright {
+        margin-top: 30px;
+        opacity: 0.6;
+        font-size: 14px;
+    }
+
+    .footer-menu {
+        nav {
+            ul {
+                display: flex;
+                justify-content: space-between;
+
+                @media (max-width: 992px) {
+                    flex-direction: column;
+                    margin-top: 20px;
+                }
+
+                li {
+                    font-size: 20px;
+
+                    @media (max-width: 992px) {
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-legal {
+        margin-top: auto;
+        font-size: 14px;
+        opacity: 0.6;
+
+        @media (max-width: 992px) {
+            margin-top: 20px;
+        }
+    }
+}

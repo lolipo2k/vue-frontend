@@ -1,0 +1,112 @@
+.modal-background {
+    .modal-body {
+        &.upload-photo {
+            .frame-upload {
+                width: 100%;
+                padding: 10px 0px 60px 0px;
+                border: 2px dashed rgba(233, 255, 252, 0.2);
+                border-radius: 15px;
+                margin-top: 30px;
+
+                input {
+                    display: none;
+                }
+            }
+
+            .picture-cropping {
+                &_btns {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 20px;
+
+                    .btn-default {
+                        margin: 0 0 0 20px;
+
+                        &.cancel {
+                            background-color: #cc0000;
+                            color: #fff;
+                        }
+
+                        &:first-child {
+                            margin: 0px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.replenish,
+        &.withdraw,
+        &.change-password {
+            .modal-body_title {
+                margin-bottom: 20px;
+            }
+
+            .modal-body_form.replenish,
+            .modal-body_form.withdraw {
+                margin-top: 20px;
+            }
+
+            .modal-body_form {
+
+                label {
+                    display: block;
+                    margin-bottom: 10px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    text-align: left;
+                }
+
+                select {
+                    width: 100%;
+                    font-weight: 600;
+                    font-size: 18px;
+
+                    option {
+                        font-weight: 600;
+                        padding: 10px 0px;
+                    }
+                }
+            }
+        }
+
+        &.replenish,
+        &.withdraw,
+        &.upload-photo,
+        &.success,
+        &.change-password {
+            padding: 60px 40px;
+            text-align: center;
+
+            h2 {
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 36px;
+            }
+
+            input {
+                margin-top: 20px;
+                width: 50%;
+
+                @media (max-width: 768px) {
+                    width: 100%;
+                }
+            }
+
+            .btn-default {
+                margin: 50px auto 0 auto;
+            }
+        }
+
+        &.withdraw,
+        &.change-password {
+            input {
+                width: 100%;
+
+                @media (max-width: 768px) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

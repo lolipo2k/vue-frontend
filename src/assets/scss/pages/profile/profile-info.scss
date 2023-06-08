@@ -1,0 +1,124 @@
+.profile-name {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 24px;
+    position: relative;
+
+    @media (max-width: 992px) {
+        font-size: 14px;
+    }
+
+    .profile-logout {
+        font-size: 14px;
+        font-weight: 400;
+        margin-left: 20px;
+        cursor: pointer;
+        color: #fff;
+        background-color: #cc0000;
+
+        @media (max-width: 992px) {
+            padding: 0px 15px;
+        }
+    }
+
+    span {
+        cursor: pointer;
+        margin-top: -30px;
+        margin-left: 5px;
+    }
+
+    &_number {
+        display: flex;
+        background: #02FEE1;
+        width: 35px;
+        height: 35px;
+        font-weight: 700;
+        font-size: 16px;
+        color: #000;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-right: 20px;
+
+        @media (max-width: 992px) {
+            margin-right: 10px;
+            font-size: 10px;
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+.profile-balance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+
+    &_info {
+        color: rgba(233, 255, 252, 0.7);
+        font-weight: 300;
+        font-size: 14px;
+
+        @media (max-width: 992px) {
+            &.desktop {
+                display: none;
+            }
+
+            font-size: 12px;
+            margin-top: 20px;
+        }
+
+        span {
+            font-weight: 700;
+            font-size: 20px;
+            color: rgba(233, 255, 252, 1);
+            display: inline-block;
+            margin-left: 15px;
+
+            @media (max-width: 992px) {
+                margin-left: 5px;
+                font-size: 14px;
+            }
+        }
+    }
+
+    &_btns {
+        display: flex;
+
+        @media (max-width: 992px) {
+            flex-wrap: wrap;
+        }
+
+        .btn-default,
+        .btn-frame {
+            @media (max-width: 992px) {
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+
+        .btn-frame {
+            margin-left: 15px;
+
+            @media (max-width: 992px) {
+                margin-left: 0px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+.profile-btn {
+    .btn-default {
+        margin-left: 0;
+        margin-top: 40px;
+
+        @media (max-width: 992px) {
+            margin: 40px auto 0 auto;
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}

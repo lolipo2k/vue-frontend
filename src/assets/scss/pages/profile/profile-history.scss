@@ -1,0 +1,68 @@
+.profile-history {
+    margin-top: 70px;
+
+    &_header {
+        display: flex;
+        border-bottom: 1px solid #E9FFFC;
+        padding-bottom: 20px;
+
+        >div {
+            font-weight: 500;
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #E9FFFC;
+            opacity: 0.6;
+            width: 50%;
+            text-align: center;
+            cursor: pointer;
+
+            &.act {
+                color: #02FEE1;
+                opacity: 1;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: calc(100% + 20px);
+                    height: 3px;
+                    width: 100%;
+                    background-color: #02FEE1;
+                }
+            }
+        }
+    }
+
+    &_table {
+        margin-top: 50px;
+        color: #E9FFFC;
+
+        &-header {
+            background: #0E0F3E;
+            padding: 15px 0px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        &-content {
+            margin-top: 30px;
+            text-align: center;
+            font-weight: 400;
+            font-size: 14px;
+
+            &__item {
+                margin-top: 40px;
+
+                &:first-child {
+                    margin-top: 0px;
+                }
+
+                img {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
