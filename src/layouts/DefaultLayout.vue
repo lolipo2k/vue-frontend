@@ -71,7 +71,7 @@ export default {
     data() {
         return {
             modalRegister: false,
-            switchActive: false,
+            switchActive: true,
             loginRegister: false,
             logIn: false,
             successRegistr: false,

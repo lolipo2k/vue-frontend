@@ -66,6 +66,7 @@ export default {
         return {
             menuOpen: false,
             profileInfo: {},
+            switchActive: true,
         }
     },
     mounted() {
